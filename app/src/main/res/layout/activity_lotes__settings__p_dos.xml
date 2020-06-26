@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Lotes_Settings_PDos"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:text="DATOS DEL POTRERO"
+        android:fontFamily="cursive">
+
+    </TextView>
+
+    <EditText
+        android:layout_width="194dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Nombre del Lote"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp">
+    </EditText>
+
+    <EditText
+        android:layout_width="237dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Medidas del lote mts"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"></EditText>
+
+    <DatePicker
+        android:layout_width="302dp"
+        android:layout_height="143dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"></DatePicker>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="122dp"
+        android:layout_height="129dp"
+        android:src="@drawable/imageview"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"></androidx.appcompat.widget.AppCompatImageView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SALVAR Y ACTUALIZAR"
+        android:background="@android:color/darker_gray"
+        android:layout_gravity="center">
+
+    </Button>
+</LinearLayout>

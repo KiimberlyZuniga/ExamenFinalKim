@@ -1,18 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    >
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="POTREROS PARA GANADOS"
+        android:fontFamily="cursive"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="60dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyPotreros"
+        android:layout_width="match_parent"
+        android:layout_height="565dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="35dp"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addPasto"
+        android:layout_width="105dp"
+        android:layout_height="87dp"
+        android:layout_alignBottom="@+id/RecyPotreros"
+        android:layout_marginLeft="350dp"
+        android:background="@color/cardview_dark_background"
+        android:clickable="true"
+        android:src="@drawable/add"
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/pasto"
+        android:src="@drawable/pasto"
+        android:layout_alignBottom="@+id/RecyPotreros"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/seePasto"
+        ></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+</RelativeLayout>
