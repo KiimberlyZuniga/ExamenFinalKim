@@ -74,7 +74,7 @@ public class Lote {
         return fechalote;
     }
 
-    public void setFechalote(DatePicker fechalote) {
+    public void setFechalote(String fechalote) {
         this.fechalote = fechalote;
     }
 

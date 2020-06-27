@@ -6,7 +6,7 @@ import androidx.room.RoomDatabase;
 import com.example.examenfinalkim.Entidades.Lote;
 import com.example.examenfinalkim.Interfaces.LoteDao;
 
-@Database(entities = {Lote.class}, version = 1)
+@Database(entities = {Lote.class}, version = 3)
 public abstract class AppDatabase extends RoomDatabase {
     @SuppressWarnings("WeakerAccess")
     public abstract LoteDao loteDao();
