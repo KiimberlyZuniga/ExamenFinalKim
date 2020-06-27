@@ -46,7 +46,7 @@ public class Lotes_Settings_PDos extends AppCompatActivity {
         Lote obj = new Lote();
         obj.setNombrelote(nomLote.getText().toString());
         obj.setMedidalote(medidaLote.toString());
-        obj.setFechalote(fechaLote.toString());
+        obj.setFechalote(fechaLote);
         obj.setFotolote(imagenlote);
 
 

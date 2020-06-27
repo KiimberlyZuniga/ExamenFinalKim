@@ -16,21 +16,22 @@
         android:textSize="20dp"
         android:layout_marginLeft="60dp" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/RecyPotreros"
+    <ListView
+        android:scrollbars="vertical"
+        android:id="@+id/ListViewPotreros"
         android:layout_width="match_parent"
         android:layout_height="565dp"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="35dp"
         >
 
-    </androidx.recyclerview.widget.RecyclerView>
+    </ListView>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/addPasto"
         android:layout_width="105dp"
         android:layout_height="87dp"
-        android:layout_alignBottom="@+id/RecyPotreros"
+        android:layout_alignBottom="@+id/ListViewPotreros"
         android:layout_marginLeft="350dp"
         android:background="@color/cardview_dark_background"
         android:clickable="true"
@@ -41,7 +42,7 @@
         android:layout_height="match_parent"
         android:background="@drawable/pasto"
         android:src="@drawable/pasto"
-        android:layout_alignBottom="@+id/RecyPotreros"
+        android:layout_alignBottom="@+id/ListViewPotreros"
         android:layout_marginLeft="10dp"
         android:id="@+id/seePasto"
         ></com.google.android.material.floatingactionbutton.FloatingActionButton>

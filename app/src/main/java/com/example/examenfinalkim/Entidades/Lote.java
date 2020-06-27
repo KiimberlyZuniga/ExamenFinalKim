@@ -4,7 +4,6 @@ import android.content.ContentValues;
 import android.provider.BaseColumns;
 import android.widget.DatePicker;
 import android.widget.ImageView;
-import android.widget.VideoView;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
@@ -13,6 +12,7 @@ import androidx.room.PrimaryKey;
 
 @Entity(tableName = Lote.TABLE_NAME)
 public class Lote {
+
     public static final String TABLE_NAME = "lote";
     public static final String COLUMN_NAME = "nombre";
 
@@ -28,11 +28,11 @@ public class Lote {
     @ColumnInfo(name = "medidalote")
     private String medidalote;
     @ColumnInfo(name = "fechalote")
-    private DatePicker fechalote;
+    public int fechalote;
     @ColumnInfo(name = "videolote")
-    private VideoView videolote;
+    private String videolote;
     @ColumnInfo(name = "fotolote")
-    private ImageView fotolote;
+    private String fotolote;
 
     public static String getTableName() {
         return TABLE_NAME;
@@ -70,34 +70,29 @@ public class Lote {
         this.medidalote = medidalote;
     }
 
-    public DatePicker getFechalote() {
+    public int getFechalote() {
         return fechalote;
     }
 
-    public void setFechalote(String fechalote) {
-        this.fechalote = fechalote;
-    }
-
-    public VideoView getVideolote() {
+   //set fecha lote
+    public String getVideolote() {
         return videolote;
     }
 
-    public void setVideolote(VideoView videolote) {
+    public void setVideolote(String videolote) {
         this.videolote = videolote;
     }
 
-    public ImageView getFotolote() {
+    public String getFotolote() {
         return fotolote;
     }
 
-    public void setFotolote(ImageView fotolote) {
-        this.fotolote = fotolote;
-    }
+    //set foto lote
 
     @Ignore
     public Lote(){}
 
-    public Lote(long id, String nombrelote, String medidalote, DatePicker fechalote, VideoView videolote, ImageView fotolote) {
+    public Lote(long id, String nombrelote, String medidalote, int fechalote, String videolote, String fotolote) {
         this.id = id;
         this.nombrelote = nombrelote;
         this.medidalote = medidalote;
@@ -114,5 +109,11 @@ public class Lote {
             obj.setId(1);
         }
         return obj;
+    }
+
+    public void setFechalote(DatePicker fechaLote) {
+    }
+
+    public void setFotolote(ImageView imagenlote) {
     }
 }
