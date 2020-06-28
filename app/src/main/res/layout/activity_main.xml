@@ -8,24 +8,23 @@
     >
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="POTREROS PARA GANADOS"
-        android:fontFamily="cursive"
+        android:layout_marginLeft="5dp"
         android:layout_marginTop="10dp"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        android:layout_marginLeft="60dp"
-        android:textColor="#000"/>
+        android:fontFamily="cursive"
+        android:text="POTREROS PARA GANADOS"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:textStyle="bold" />
 
     <ListView
-        android:scrollbars="vertical"
         android:id="@+id/ListViewPotreros"
         android:layout_width="match_parent"
-        android:layout_height="565dp"
+        android:layout_height="550dp"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="35dp"
-        >
+        android:scrollbars="vertical">
 
     </ListView>
 
@@ -47,7 +46,7 @@
         android:layout_alignBottom="@+id/ListViewPotreros"
         android:layout_marginLeft="10dp"
         android:id="@+id/seePasto"
-        ></com.google.android.material.floatingactionbutton.FloatingActionButton>
+        />
 
 
 </RelativeLayout>

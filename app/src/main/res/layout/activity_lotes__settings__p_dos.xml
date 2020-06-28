@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textSize="30dp"
+        android:textSize="40dp"
         android:textColor="#000"
         android:text="DATOS DEL POTRERO"
         android:textStyle="bold"
@@ -35,7 +35,7 @@
         android:hint="Medidas del lote mts"
         android:textSize="20dp"
         android:layout_marginTop="20dp"
-        android:id="@+id/medidaslote"></EditText>
+        android:id="@+id/medidaslote"/>
 
     <DatePicker
         android:layout_width="302dp"
@@ -50,7 +50,7 @@
         android:src="@drawable/imageview"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
-        android:id="@+id/imagevieww"></androidx.appcompat.widget.AppCompatImageView>
+        android:id="@+id/imagevieww"/>
 
     <Button
         android:onClick="Guardarlote"
