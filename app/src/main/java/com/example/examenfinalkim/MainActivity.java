@@ -87,7 +87,9 @@ public class MainActivity extends AppCompatActivity {
 
             TextView txtlote = (TextView) item.findViewById(R.id.txtItemLote);
 
-            String dato = loteList.get(position).getId()+ " - " + loteList.get(position).getNombrelote();
+            String dato = loteList.get(position).getId()+ " - " + loteList.get(position).getNombrelote()
+                    ;
+
 
             txtlote.setText(dato);
 

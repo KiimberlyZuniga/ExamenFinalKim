@@ -11,7 +11,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:textSize="30dp"
+        android:textColor="#000"
         android:text="DATOS DEL POTRERO"
+        android:textStyle="bold"
         android:fontFamily="cursive">
 
     </TextView>
@@ -55,6 +57,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="SALVAR Y ACTUALIZAR"
+        android:textStyle="bold"
         android:background="@android:color/darker_gray"
         android:layout_gravity="center"
         android:id="@+id/botonguardaryact">

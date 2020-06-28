@@ -15,6 +15,7 @@ public class Lote {
 
     public static final String TABLE_NAME = "lote";
     public static final String COLUMN_NAME = "nombre";
+    //public static final String COLUMN_NAME_MEDIDA = "medida";
 
 
     public static final String COLUMN_ID = BaseColumns._ID;
@@ -107,6 +108,7 @@ public class Lote {
         }
         if (values.containsKey(COLUMN_NAME)){
             obj.setId(1);
+
         }
         return obj;
     }

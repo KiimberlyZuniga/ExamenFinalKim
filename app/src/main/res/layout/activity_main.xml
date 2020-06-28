@@ -13,8 +13,10 @@
         android:text="POTREROS PARA GANADOS"
         android:fontFamily="cursive"
         android:layout_marginTop="10dp"
-        android:textSize="20dp"
-        android:layout_marginLeft="60dp" />
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="60dp"
+        android:textColor="#000"/>
 
     <ListView
         android:scrollbars="vertical"
