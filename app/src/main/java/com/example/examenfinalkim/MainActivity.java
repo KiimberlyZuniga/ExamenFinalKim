@@ -96,4 +96,8 @@ public class MainActivity extends AppCompatActivity {
             return item;
         }
     }
+
+    public void moveToShowValuesAct(View view){
+        startActivity(new Intent(this,Lotes_Status_PTres.class));
+    }
 }

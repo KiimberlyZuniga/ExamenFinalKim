@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
 
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -43,7 +42,7 @@ public class Lotes_Settings_PDos extends AppCompatActivity {
     }
 
     public void Guardarlote(View view) {
-        Lote obj = new Lote();
+        Lote obj = new Lote("Lote en recuperacion", "254", "52", "video", "foto");
         obj.setNombrelote(nomLote.getText().toString());
         obj.setMedidalote(medidaLote.toString());
         obj.setFechalote(fechaLote);
@@ -54,6 +53,7 @@ public class Lotes_Settings_PDos extends AppCompatActivity {
         long resultado = db.loteDao().insert(obj);
         if (resultado > 0){
             startActivity(new Intent(Lotes_Settings_PDos.this, MainActivity.class));
+            startActivity(new Intent(Lotes_Settings_PDos.this, Lotes_Status_PTres.class));
         }else {
 
         }

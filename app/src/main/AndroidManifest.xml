@@ -11,6 +11,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".Lotes_Status_PTres"></activity>
         <activity android:name=".Lotes_Settings_PDos" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

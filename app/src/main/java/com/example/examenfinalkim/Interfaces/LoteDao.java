@@ -13,6 +13,7 @@ import java.util.List;
 public interface LoteDao {
     //aqui se declara los metodos o acciones consultas para la bd
     //
+
     @Query("SELECT COUNT(*) FROM" + Lote.TABLE_NAME)
     int count();//metodo
 

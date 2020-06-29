@@ -11,8 +11,9 @@ import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
 @Entity(tableName = Lote.TABLE_NAME)
-public class Lote {
+public class Lote{
 
+    public static final String DATABASE_NAME = "Lote.db";
     public static final String TABLE_NAME = "lote";
     public static final String COLUMN_NAME = "nombre";
     //public static final String COLUMN_NAME_MEDIDA = "medida";
@@ -29,7 +30,7 @@ public class Lote {
     @ColumnInfo(name = "medidalote")
     private String medidalote;
     @ColumnInfo(name = "fechalote")
-    public int fechalote;
+    public String fechalote;
     @ColumnInfo(name = "videolote")
     private String videolote;
     @ColumnInfo(name = "fotolote")
@@ -71,7 +72,7 @@ public class Lote {
         this.medidalote = medidalote;
     }
 
-    public int getFechalote() {
+    public String getFechalote() {
         return fechalote;
     }
 
@@ -91,9 +92,9 @@ public class Lote {
     //set foto lote
 
     @Ignore
-    public Lote(){}
+    public Lote(String lote_en_recuperacion, String s, String s1, String video, String foto){}
 
-    public Lote(long id, String nombrelote, String medidalote, int fechalote, String videolote, String fotolote) {
+    public Lote(long id, String nombrelote, String medidalote, String fechalote, String videolote, String fotolote) {
         this.id = id;
         this.nombrelote = nombrelote;
         this.medidalote = medidalote;
@@ -102,7 +103,7 @@ public class Lote {
         this.fotolote = fotolote;
     }
     public static Lote fromContentValues(ContentValues values){
-        final Lote obj = new Lote();
+        final Lote obj = new Lote("Lote en recuperacion", "254", "52", "video", "foto");
         if (values.containsKey(COLUMN_ID)){
             obj.id = values.getAsLong(COLUMN_ID);
         }
@@ -118,4 +119,6 @@ public class Lote {
 
     public void setFotolote(ImageView imagenlote) {
     }
+
+
 }
